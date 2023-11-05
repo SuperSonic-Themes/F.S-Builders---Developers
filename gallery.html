@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <section class="text-center py-8">
+        <h1 class="text-3xl font-bold">Our Projects</h1>
+        <div class="grid grid-cols-4 gap-4 mt-4">
+            <div class="clickable-element group" data-project="project1">
+                <div class="bg-white p-4 rounded-lg shadow-md group-hover:shadow-xl cursor-pointer">
+                    <p class="text-lg text-gray-800">Project 1</p>
+                </div>
+            </div>
+            <div class="clickable-element group" data-project="project2">
+                <div class="bg-white p-4 rounded-lg shadow-md group-hover:shadow-xl cursor-pointer">
+                    <p class="text-lg text-gray-800">Project 2</p>
+                </div>
+            </div>
+            <!-- Add more clickable elements as needed -->
+        </div>
+    </section>
+
+    <!-- Gallery with close button -->
+    <div class="gallery fixed top-0 left-0 w-full h-full bg-white p-8 overflow-y-auto" style="display: none;">
+        <span class="close-button absolute top-2 right-4 text-2xl cursor-pointer bg-blue-600 border-4 border-black text-white rounded-full p-1 z-10" onclick="closeGallery()">&times;</span>
+        <div class="owl-carousel owl-theme">
+            <!-- Carousel items will be added using JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Function to open the gallery
+        function openGallery(imageUrls) {
+            const gallery = document.querySelector('.gallery');
+            const carousel = gallery.querySelector('.owl-carousel');
+            carousel.innerHTML = ''; // Clear existing items
+
+            imageUrls.forEach(imageUrl => {
+                const item = document.createElement('div');
+                item.innerHTML = `<img src="${imageUrl}" alt="Gallery Image" class="w-screen h-auto rounded-lg">`;
+                carousel.appendChild(item);
+            });
+
+            gallery.style.display = 'block';
+
+            // Initialize Owl Carousel for the gallery
+            $(carousel).owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                dots: true
+            });
+        }
+
+        // Function to close the gallery
+        function closeGallery() {
+            const gallery = document.querySelector('.gallery');
+            gallery.style.display = 'none';
+        }
+
+        // Add click event listeners for clickable elements
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectData = {
+                project1: ['./images/5197057.jpg', './images/discussing-blueprint.jpg', './images/8104.jpg'],
+                project2: ['./images/5197057.jpg', './images/discussing-blueprint.jpg', './images/8104.jpg'],
+                // Add more project data as needed
+            };
+
+            const elements = document.querySelectorAll('.clickable-element');
+
+            elements.forEach(element => {
+                element.addEventListener('click', () => {
+                    const projectKey = element.getAttribute('data-project');
+                    const imageUrls = projectData[projectKey];
+                    openGallery(imageUrls);
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Teastimonials -->
+<section class="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="myOwlCarousel" class="owl-carousel">
+
+    <div  class=" bg-transparent hover:scale-[1.1] hover:shadow-blue-500     border-4 border-blue-100 shadow-2xl p-5 rounded-2xl text-start space-y-5 w-[25rem]">
+<p class="">Lorem ipsum dolor sit aem. Porro animi cupiditate labore laboriosam impedit assumenda quod earum?</p>
+
+<div class="grid grid-cols-2 items-center">
+    <div>
+        <h1 class="font-bold">John Smith</h1>
+        <span class="font-thin">Finance Advisor</span>
+    </div>
+    <img src="./images/quote.png" class=" " />
+</div>
+    </div>
+
+
+
+
+    <div  class=" bg-transparent border-4 border-blue-100 shadow-2xl p-5 rounded-2xl text-start space-y-5 w-[25rem]">
+        <p class="">Lorem ipsum dolor sit aem. Porro animi cupiditate labore laboriosam impedit assumenda quod earum?</p>
+        
+        <div class="grid grid-cols-2 items-center">
+            <div>
+                <h1 class="font-bold">John Smith</h1>
+                <span class="font-thin">Finance Advisor</span>
+            </div>
+            <img src="./images/quote.png" class=" " />
+        </div>
+            </div>
+        
+
+
+
+
+
+
+            <div  class=" bg-transparent border-4 border-blue-100 shadow-2xl p-5 rounded-2xl text-start space-y-5 w-[25rem]">
+                <p class="">Lorem ipsum dolor sit aem. Porro animi cupiditate labore laboriosam impedit assumenda quod earum?</p>
+                
+                <div class="grid grid-cols-2 items-center">
+                    <div>
+                        <h1 class="font-bold">John Smith</h1>
+                        <span class="font-thin">Finance Advisor</span>
+                    </div>
+                    <img src="./images/quote.png" class=" " />
+                </div>
+                    </div>
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div  class=" bg-transparent border-4 border-blue-100 shadow-2xl p-5 rounded-2xl text-start space-y-5 w-[25rem]">
+                        <p class="">Lorem ipsum dolor sit aem. Porro animi cupiditate labore laboriosam impedit assumenda quod earum?</p>
+                        
+                        <div class="grid grid-cols-2 items-center">
+                            <div>
+                                <h1 class="font-bold">John Smith</h1>
+                                <span class="font-thin">Finance Advisor</span>
+                            </div>
+                            <img src="./images/quote.png" class=" " />
+                        </div>
+                            </div>
+                        
+
+                        </div>
+
+
+
+<script>
+    $(document).ready(function(){
+      $("#myOwlCarousel").owlCarousel({
+        items: 3, // Number of items to display at a time
+        loop: true, // Infinite loop
+        margin: 20, // Spacing between items
+        nav: true, // Show navigation arrows
+        dots: true, // Show navigation dots
+        autoplay: true, // Autoplay the carousel
+        autoplayTimeout: 3000, // Autoplay interval in milliseconds
+        responsive: {
+          0: {
+            items: 1 // Number of items to display on smaller screens
+          },
+          768: {
+            items: 2 // Number of items to display on medium screens
+          },
+          992: {
+            items: 3 // Number of items to display on larger screens
+          }
+        }
+      });
+    });
+    </script>
+    
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="about-main" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+        ">
+        <div class="" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="about-img">
+        <img src="./images/about.png" alt="">
+        <span class="circle-spin"></span>
+        <span class="animate scroll" style="--i:2;"></span>
+    </div>
+    <div class="about-content">
+        <h3>Frontend Developer! <span class="animate scroll" style="--i:3;"></span></h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione pariatur impedit corporis error sit expedita iusto tempora amet, quaerat laudantium atque enim natus sapiente maxime quos dolorem dolores cupiditate.
+            
+            <span class="animate scroll" style="--i:4;"></span>
+        </p>
+    </div>
+</div>
+<div class="" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="about-img">
+        <img src="./images/about.png" alt="">
+        <span class="circle-spin"></span>
+        <span class="animate scroll" style="--i:2;"></span>
+    </div>
+    <div class="about-content">
+        <h3>Frontend Developer! <span class="animate scroll" style="--i:3;"></span></h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ratione pariatur impedit corporis error sit expedita iusto tempora amet, quaerat laudantium atque enim natus sapiente maxime quos dolorem dolores cupiditate.
+            
+            <span class="animate scroll" style="--i:4;"></span>
+        </p>
+    </div>
+    </div>
+</div>
+        <div class="btn-box btns">
+            <a href="#" class="btn">Read More</a>
+            <span class="animate scroll" style="--i:5;"></span>
+        </div>
